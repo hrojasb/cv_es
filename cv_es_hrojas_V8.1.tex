@@ -1,0 +1,147 @@
+\documentclass[11pt,letterpaper]{moderncv}
+
+% moderncv styles
+%\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvstyle{classic}       % idem
+%\moderncvtheme[gray]{classic}       % idem
+%\moderncvstyle[gray]{classic}       % idem
+
+%\usepackage{hyperref}
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} 
+\usepackage{graphicx}
+\usepackage{savesym}
+\savesymbol{fax}
+\usepackage{marvosym}
+\restoresymbol{MARV}{fax}
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{\huge Héctor}
+\familyname{\huge Rojas Barrios\ \ \ \ \ \ }
+\title{Ingeniero Civil en Computación}
+%\address{Calle , \\Poblacion}{Ciudad}  % for classic style
+%\mobile{(56)(9)(84021301)}
+\phone{(56)(9)(9298 0806)}
+\email{hrojasb@gmail.com}
+%\extrainfo{http://www.algo.com}
+%\photo[64pt]{foto.eps} % also optional, and the optional argument is the height the picture must be resized to
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+% command and color used in this document, independently from moderncv 
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+\nopagenumbers
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\nopagenumbers
+\maketitle
+%\makequote
+
+\section{Formación académica}
+\cventry{2003 -- 2012}{Ingeniería Civil en Computación}{Universidad de Talca}{Curicó}{}{}
+\cventry{2003 -- 2011}{Licenciatura en Ciencias de la Ingeniería}{Universidad de Talca}{Curicó}{}{}
+\cventry{2007 -- 2008}{Intercambio Académico}{Technische Universit\"{a}t Dresden}{Dresden}{Alemania}{}
+\cventry{1999 -- 2002}{Educación Media}{Liceo Abate Molina}{Talca}{}{}
+
+\section{Formación complementaria}
+\cventry{2019}{Sistema de Grabación NTR - Mesas de dinero}{Virtual}{Online}{}{}
+\cventry{2017}{Sistema de Grabación - Alta disponibilidad - NICE}{Oficinas Nice}{Singapore}{}{}
+\cventry{2017}{Sistema Avaya IVR}{Virtual}{Online}{}{}
+\cventry{2016}{Sistema de Grabación NICE}{Oficinas Nice}{Denver, USA}{}{}
+\cventry{2015}{Sistema Avaya AES}{Virtual}{Online}{}{}
+\cventry{2013}{Sistema de Grabación Verint}{Oficinas Avaya}{México DF, México}{}{}
+\cventry{2013}{Sistema de Videoconferencia Scopia Radvision}{Oficinas 
+Avaya}{Londres, UK}{}{}
+\cventry{2013}{Sistema de Grabación NICE}{Oficinas NICE}{Denver, USA}{}{}
+
+\cventry{2006}{Séptimo Encuentro de Linux}{Universidad Católica del Maule}{Talca}{}{}{}
+\cventry{2006}{Taller Tópicos Emergentes en la Web}{Departamento Cs. de la Computación, Universidad de Chile}{Santiago}{}{}
+
+\section{Experiencia}
+\cventry{2013 - 2020}{Ingeniero Senior Implementación de Proyectos y Continuidad Operacional}{Especialista en Tecnologías SQL, MS Cluster, VMware, Avaya, Telefonía, Sistemas de grabación y Videoconferencia}{Bell Technologies S.A}{Santiago}{}
+\cventry{2012--2013}{Jéfe Área de Informática}{A cargo de departamento de Informática con desarrollo interno}{CONAC S.A}{Talca}{}
+\cventry{2011--2012}{Universidad-Privado}{Desarrollo de API Rest y Aplicación Móvil - Software Turismo}{}{Talca}{}
+\cventry{2009--2012}{Independiente}{Desarrollo e implementación de proyectos de softwares y redes}{}{Talca}{}
+\cventry{2009}{Desarrollador}{Área de desarrollo del producto TimeMachine}{Empresa Paradigma S.A.}{Santiago}{}
+\cventry{2009}{Alumno Practicante}{Área de desarrollo del producto TimeMachine}{Empresa Paradigma S.A.}{Santiago}{}
+\cventry{2008}{Alumno ayudante}{Área de soporte de la Facultad de Ingeniería}{Universidad de Talca}{Curicó}{}
+\cventry{2006}{Alumno Practicante}{Ayudante de Investigación del Dr. Alfredo Candia Vejar}{Estudio e implementación de algoritmos de optimización para grafos simples y robustos}{Universidad de Talca, Curic\'o}{}
+\cventry{2006}{Alumno ayudante}{Asignatura "Algoritmos y Estructuras de Datos"}{Universidad de Talca}{Curic\'o}{}
+%\cventry{2004 -- 2005}{Alumno ayudante}{Asignatura "Computación y Programación"}{Universidad de Talca}{Curicó}{}
+
+\ 
+
+\section{Conocimientos}
+\subsection{Informática}
+\cvcomputer{SO}{\textbf{Gnu/Linux, Windows Workstation y Server, Virtualización VMware y KVM.}}
+			{Admin. de Sofware}{\textbf{OpenSource: Servicios, Telefonía IP, E-Learning, ERP, CRM.}}
+%\cvcomputer{Ofimática}{\textbf{Microsoft Office (Word, PowerPoint, Excel, Visio) y OpenOffice.}}
+%			{Hardware}{\textbf{Nivel medio.}}
+\cvcomputer{Programación Estructurada y OO}{\textbf{Java (J2EE), Python, C/C++, Visual Basic.}}
+			{IDE}{\textbf{Eclipse, Netbeans, Visual Studio 2010.}}
+%\cvcomputer{Programación Científica}{\textbf{Matlab, Scilab.}}
+%			{Maquetación}{\textbf{\LaTeX.}}
+\cvcomputer{Metodologias Agiles}{\textbf{Scrum, XP, Kanban, FDD.}}
+			{}{\textbf{}}
+\cvcomputer{Control de Versiones}{\textbf{GIT.}}
+			{Scripting}{\textbf{Bash Scripting.}}
+\cvcomputer{Desarrollo Web}{\textbf{JSP, XML, XForms.}}
+			{Base de datos}{\textbf{eXist, MySQL, PostgreSQL, Microsoft SQL Server.}}
+\cvcomputer{Procesamiento Digital de Imágenes}{\textbf{C++, OpenCV.}}
+			{Redes}{\textbf{Cableado estructurado, Administración de dispositivos y sistemas de seguridad.}}			
+		
+\subsection{Idiomas}
+\cvlanguage{Inglés}{Lectura \hspace{1.3ex}(Alto) \\Escritura (Alto) \\Habla \hspace{3.1ex}(Medio)}{Puntaje TOEIC 2009: 635}
+\cvlanguage{Alemán}{Lectura \hspace{1.3ex}(Medio) \\Escritura (Medio) \\Habla \hspace{3.1ex}(Medio)}{}
+
+\section{Becas y méritos}					
+\cventry{2007 -- 2008}{Beca de Intercambio "Programa de Ingeniería DAAD-Universidades Chilenas"}
+					{Technische Universit\"{a}t Dresden}
+					{Alemania}
+					{Periodo Agosto 2007 a Julio 2008}
+					{}
+\cventry{Primer Semestre 2007}{Beca Cuadro De Honor}
+					{Carrera de Ingeniería Civil en Computación}
+					{Universidad de Talca}
+					{}
+					{}
+\cventry{Segundo Semestre 2006}{Beca Cuadro De Honor}
+					{Carrera de Ingeniería Civil en Computación}
+					{Universidad de Talca}
+					{}
+					{}					
+					
+\section{Datos Personales}
+\cventry{RUT}{15.907.915-5}{}{}{}{}
+%\cventry{Nacionalidad}{Chilena}{}{}{}{}
+\cventry{Estado Civil}{Casado}{}{}{}{}
+\cventry{Dirección}{Hernán Cortes 2953 Depto. 504}{\textbf{Ñuñoa}}{}{}{}
+%\cventry{Tel\'efono}{84021301}{}{}{}{}
+%\cventry{E-mail}{hrojasb@gmail.com}{}{}{}{}
+\end{document}
